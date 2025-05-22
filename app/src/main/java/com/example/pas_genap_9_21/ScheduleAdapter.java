@@ -13,30 +13,29 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 // Adapter untuk menghubungkan data Team ke RecyclerView
-public class ScheduleAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder> {
+public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ScheduleViewHolder> {
 
     private List<Schedule> scheduleList;
 
     // Constructor menerima list
-    public ScheduleAdapter(List<Schedule> countries) {
+    public ScheduleAdapter(List<Schedule> Schedule) {
         this.scheduleList = Schedule;
     }
-
 
     @Override
     public ScheduleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_country, parent, false);
+                .inflate(R.layout.item_schedule, parent, false);
         return new ScheduleViewHolder(view);
     }
 
 
     @Override
-    public void onBindViewHolder(TeamViewHolder holder, int position) {
+    public void onBindViewHolder(ScheduleViewHolder holder, int position) {
         Schedule schedule = scheduleList.get(position);
 
 
-        holder.countrysname.setText(schedule.getname_en());//ganti nanti
+        holder.textcountrysname.setText(schedule.getStrEvent());//ganti nanti
 
         // Gunakan Glide untuk memuat gambar logo tim ke ImageView
         Glide.with(holder.itemView.getContext())
@@ -51,15 +50,16 @@ public class ScheduleAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHo
     }
 
 
-    public static class TeamViewHolder extends RecyclerView.ViewHolder {
-        TextView textcountrysname, textcountrysflag;
+    public static class ScheduleViewHolder extends RecyclerView.ViewHolder {
+        TextView textcountrysname, textSchedule;
         ImageView rvimage;
 
-        public TeamViewHolder(View itemView) {
+        public ScheduleViewHolder(View itemView) {
             super(itemView);
             // Hubungkan komponen UI dari layout item_team.xml
-            textcountrysname = itemView.findViewById(R.id.textCountrysname);
-            rvimage = itemView.findViewById(R.id.rvImage);
+            textcountrysname = itemView.findViewById(R.id.textTeamName);
+            rvimage = itemView.findViewById(R.id.rvBadge);
+            textSchedule = itemView.findViewById(R.id.textSchedule);
         }
     }
 }
