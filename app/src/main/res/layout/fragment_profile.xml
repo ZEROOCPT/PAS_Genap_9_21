@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/picarsya"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/arsya"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+
+    />
+
+    <TextView
+        android:id="@+id/txtarsya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arsya Muhammad Faisyar"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtemailarsya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arsyatampan20009@gmail.com"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+    <TextView
+        android:id="@+id/txtnowaarsya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+62 857-4171-3412"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+    <TextView
+        android:id="@+id/txtabsenarsya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absen 9"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+
+    <ImageView
+
+        android:id="@+id/picnaren"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/naren"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="50dp"
+       />
+
+
+    <TextView
+        android:id="@+id/txtnaren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made Narendra Dhanadyata Nurjaya/21"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+
+    <TextView
+        android:id="@+id/txtemailnaren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="made.narendra.dhanadyatanurjaya@gmail.com"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+    <TextView
+        android:id="@+id/txtnowanaren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+62 811 3867 373"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+    <TextView
+        android:id="@+id/txtabsennaren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absen 21"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
